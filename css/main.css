@@ -22,11 +22,16 @@ span {
 .blanco {
 	color: white;
 }
-.fondo-1 {
+header {
 	background-color: #037F99;
 	height: 5em;
+	padding: 1%;
 	font-family: 'Baloo Paaji', cursive;
 	text-align: center;
+	box-sizing: border-box;
+}
+.hamburguesa {
+	display: none;
 }
 .titulo-pagina {
 	margin: 0 auto;
@@ -36,13 +41,12 @@ span {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center top;
-	padding: 5em;
+	padding: 5%;
 	box-sizing: border-box;
-	font-size: 'Baloo Paaji', cursive;
 }
 .fondo-3 {
 	background-color: rgba(50,109,82,0.5);
-	padding: 3em;
+	padding: 10%;
 	width: 100%;
 	margin: 0 auto;
 	box-sizing: border-box;
@@ -54,7 +58,7 @@ span {
 	margin: 0 auto;
 }
 .tit-2 {
-	font-size: 6em;
+	font-size: 500%;
 }
 .rabbit {
 	width: 100%;
@@ -123,4 +127,63 @@ iframe {
 }
 .fondo-blanco {
 	background-color: white;
+}
+.footer-bunny {
+	background-image: url(../img/bunny-head.png);
+	background-size: 10em;
+	background-repeat: repeat-x;
+	height: 5em;
+	margin: 0 auto;
+}
+.fondo-footer {
+	background-color: #037F99;
+	height: 5em;
+	padding-top: 2em;
+	box-sizing: border-box;
+}
+footer {
+	border-top: 3px solid #FF7673;
+}
+
+
+
+@media only screen and (max-width : 479px) {
+	.titulo-pagina {
+		font-size: 20px;
+		text-align: left;
+		margin: 20px 10px;
+	}
+	ul {
+		display: none;
+	}
+	.container {
+		width: 96%;
+	}
+	.tit-2 {
+		font-size: 40px;
+	}
+	.fondo-2 {
+		padding: 5%;
+	}
+	.fondo-3 {
+		padding: 5%;
+	}
+	.sub-tit-2 {
+		font-size: 22px;
+		margin-bottom: 0;
+	}
+	.hamburguesa {
+		width: 10%;
+		height: auto;
+		display: inline;
+		position: absolute;
+		top: 20px;
+		right: 10px;
+	}
+	.no-display {
+		display: none;
+	}
+	iframe {
+		height: 100%;
+	}
 }
